@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شهرها</title>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet"
+        type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            direction: rtl;
+            font-family: Vazirmatn;
+            margin: 0;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="text-center bg-secondary text-white p-4 container-fluid">
+        <h2>شهرها</h2>
+    </header>
+    <main class="row">
+
+        <aside class="col-md-4 p-4 bg-body-secondary ">
+            <a href="#" class="d-block text-black" onclick="cityInfo(0)">لندن</a>
+            <a href="#" class="d-block text-black" onclick="cityInfo(1)">پاریس</a>
+            <a href="#" class="d-block text-black " onclick="cityInfo(2)">توکیو</a>
+        </aside>
+        <div class=" col-sm-8  p- bg-body-secondary  " id="city-desc">لندن<br>
+            آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری
+            از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از
+            نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از
+            متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا صرفا به مشتری یا صاحب کار خود نشان دهند که صفحه طراحی یا صفحه
+            بندی شده بعد از اینکه متن در آن قرار گیرد چگونه به نظر می‌رسد و قلم‌ها و اندازه‌بندی‌ها چگونه در نظر گرفته
+            شده‌است. از آنجایی که طراحان عموما نویسنده متن نیستند و وظیفه رعایت حق تکثیر متون را ندارند و در همان حال
+            کار آنها به نوعی وابسته به متن می‌باشد آنها با استفاده از محتویات ساختگی، صفحه گرافیکی خود را صفحه‌آرایی
+            می‌کنند تا مرحله طراحی و صفحه‌بندی را به پایان برند.
+
+        </div>
+    </main>
+    <footer>
+        <div class="row">
+            <div class="p-4 w-25 col-md-3 d-block bg-secondary text-white"> درباره ی سایت<br>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
+                    و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد </p>
+            </div>
+            <div class="p-4 w-25 col-md-3 d-block bg-secondary text-white">لینک های داخلی <br>
+                <a href="#" class="text-white">لینک</a><br>
+                <a href="#" class="text-white">لینک</a><br>
+                <a href="#" class="text-white">لینک</a><br>
+            </div>
+
+            <div class="p-4 w-25 col-md-3 d-block bg-secondary text-white">لینک های خارجی<br>
+                <a href="#" class="text-white">لینک</a><br>
+                <a href="#" class="text-white">لینک</a><br>
+                <a href="#" class="text-white">لینک</a><br>
+            </div>
+
+            <div class="p-4 w-25 col-md-3 d-block bg-secondary text-white">نشانی<br>
+                نشانى: استان البرز، فرديس، بين فلكه دوم وسوم، بيتزا خورشيد
+                تلفن: +٩٨٢٤٣٤٥٥
+                ايميل: omidlmazaheri@gmail.com
+            </div>
+        </div>
+
+    </footer>
+    <script>
+        const info=[
+            "ندَن (به انگلیسی: London) پایتخت و بزرگ‌ترین شهر انگلستان و در عین حال بریتانیا است.[۳][۴] این شهر در کنار رود تیمز در جنوب شرقی انگلستان، در ابتدای پای‌رود ۸۰ کیلومتری که به دریای شمال می‌رسد، قرار داشته و بنابر تخمین سال ۲۰۲۳ جمیعت آن ۸٬۹۴۵٬۳۰۹ نفر است. لندن به مدت بیش از دو هزار سال سکونت‌گاهی چشمگیر بوده است. ",
+            "پاریس (به فرانسوی: Paris) (تلفظ فرانسوی: ​[paʁi] (شنیدنⓘ)) پایتخت و پرجمعیت‌ترین شهر فرانسه است، با جمعیت تخمینی ۲٬۱۷۵٬۶۰۱ نفر (در سال ۲۰۱۸) و مساحتی بیش از ۱۰۵ کیلومتر مربع (۴۱ مایل مربع). از سدهٔ هفدهم میلادی، پاریس یکی از مراکز مهم مالی، دیپلماسی، بازرگانی، مد، غذا، علم و هنر اروپا بوده است.",
+            "توکیو (به ژاپنی: 東京 Tōkyō) با نام رسمی کلان‌شهر توکیو (به ژاپنی: 東京都 Tōkyō-to) پایتخت کشور ژاپن است. توکیو در شرق جزیرهٔ هونشوی ژاپن واقع شده‌است و یکی از استان‌های ۴۷ گانهٔ ژاپن به‌شمار می‌آید. توکیو در ابتدا یک دهکدهٔ ماهیگیری کوچک به نام ادو بود."
+        ];
+        function cityInfo(params) {
+            debugger
+            document.getElementById("city-desc").innerHTML=info[params];
+        }
+    </script>
+
+</body>
+
+</html>
